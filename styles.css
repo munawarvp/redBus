@@ -214,6 +214,7 @@ body {
 .bg-image{
     max-width: max-content;
     opacity: .2;
+    overflow: hidden;
 }
 .go{
     position: absolute;
