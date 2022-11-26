@@ -50,6 +50,7 @@ body {
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    
     opacity: 85%;
 
 }
@@ -59,25 +60,78 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+.ride div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 .right-nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    align-items: center;
 }
 .right-nav li {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
-    padding-top: 15px;
-    letter-spacing: 1;
+    
+    /* padding-top: 15px; */
+    /* letter-spacing: 1; */
 }
-.right-nav select{
-    background-color: #d94f57;
-    border: none;
-    color: white;
+.coming{
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    position: absolute;
+    top: 53px;
+    right: 150px;
+    height: 150px;
+    width: 200px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid #1b2330;
+}
+.coming li{
+    color: black;
+}
+.inside{
+    color: black;
+}
+.coming2{
+    visibility: hidden;
+    position: absolute;
+    top: 53px;
+    right: 130px;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+}
+.coming2 h4{
+    color: black;
     
 }
+.tohover:hover~.coming{
+    /* display: block; */
+    visibility: visible;
+}
+.tohover:hover~.coming2{
+    /* display: block; */
+    visibility: visible;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
 .option{
     border-radius: 0;
     color: black;
